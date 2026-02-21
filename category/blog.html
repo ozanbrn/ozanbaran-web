@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ozan Baran</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .neon-green { color: #4ade80; }
+        body {
+    background-color: #000000;
+    /* Hafif bir ızgara (grid) dokusu */
+    background-image: radial-gradient(circle at 2px 2px, #1a1a1a 1px, transparent 0);
+    background-size: 40px 40px;
+}
+        .neon-green { color: #4ade80; }
+        .bg-neon-green { background-color: #4ade80; }
+        
+        /* Buton Glow Efekti */
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(74, 222, 128, 0.6);
+            transform: translateY(-2px);
+        }
+        @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-280px * 8 - 1.5rem * 8)); }
+}
+
+.animate-infinite-scroll {
+    display: flex;
+    width: calc(280px * 16 + 1.5rem * 16); /* 8 orijinal + 8 kopya */
+    animation: scroll 40s linear infinite;
+}
+
+.animate-infinite-scroll:hover {
+    animation-play-state: paused; /* Fare üzerine gelince durur */
+}
+        /* Kaydırma çubuğu gizleme */
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+
+    <script>
+    const text = "Mühendislik disipliniyle verinin derinliklerine...";
+    let i = 0;
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("typewriter").innerHTML += text.charAt(i);
+            i++;
+            // Hız 40'tan 90'a çekilerek daha okunaklı hale getirildi
+            setTimeout(typeWriter, 90); 
+        }
+    }
+    document.addEventListener("DOMContentLoaded", typeWriter);
+</script>
+
+</head>
+
+<body>
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="https://ozanbaran.com.tr/" class="font-bold text-xl text-white">Ozan Baran | <span class="neon-green">Data Analyst</span></a>
+        
+        <ul class="hidden md:flex gap-8 text-sm uppercase tracking-wider">
+            <li><a href="https://ozanbaran.com.tr/#education" class="hover:text-[#4ade80] transition text-white">Eğitim</a></li>
+            <li><a href="https://ozanbaran.com.tr/#certificates" class="hover:text-[#4ade80] transition text-white">Sertifikalar</a></li>
+            <li><a href="https://ozanbaran.com.tr/archives.html" class="hover:text-[#4ade80] transition font-bold text-white">Projeler</a></li>
+            <li><a href="https://ozanbaran.com.tr/category/blog.html" class="hover:text-[#4ade80] transition text-white">Blog</a></li>
+            <li><a href="https://ozanbaran.com.tr/#contact" class="hover:text-[#4ade80] transition text-white">İletişim</a></li>
+        </ul>
+
+        <button id="mobile-menu-btn" class="md:hidden text-white hover:text-[#4ade80] focus:outline-none transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#050505] border-b border-gray-800 absolute w-full left-0 top-full">
+        <ul class="flex flex-col text-sm uppercase tracking-wider text-center py-4">
+            <li><a href="https://ozanbaran.com.tr/#education" class="mobile-link block py-4 hover:text-[#4ade80] hover:bg-white/5 transition text-white">Eğitim</a></li>
+            <li><a href="https://ozanbaran.com.tr/#certificates" class="mobile-link block py-4 hover:text-[#4ade80] hover:bg-white/5 transition text-white">Sertifikalar</a></li>
+            <li><a href="https://ozanbaran.com.tr/archives.html" class="mobile-link block py-4 hover:text-[#4ade80] hover:bg-white/5 transition font-bold text-white">Projeler</a></li>
+            <li><a href="https://ozanbaran.com.tr/category/blog.html" class="mobile-link block py-4 hover:text-[#4ade80] hover:bg-white/5 transition text-white">Blog</a></li>
+            <li><a href="https://ozanbaran.com.tr/#contact" class="mobile-link block py-4 hover:text-[#4ade80] hover:bg-white/5 transition text-white">İletişim</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <main class="pt-20">
+<section class="py-20 px-6 max-w-5xl mx-auto">
+    <h1 class="text-4xl font-bold mb-12 text-white">Veri <span class="neon-green">Günlükleri</span></h1>
+    
+    <div class="space-y-12">
+        <article class="group">
+            <span class="text-xs text-gray-500 uppercase tracking-widest">Mon 16 February 2026</span>
+            <h2 class="text-2xl font-bold mt-2 text-white group-hover:text-[#4ade80] transition-colors duration-300">
+                <a href="https://ozanbaran.com.tr/veri-analisti-yolculugum-basliyor.html">Veri Analisti Yolculuğum Başlıyor</a>
+            </h2>
+            <p class="text-gray-400 mt-4 leading-relaxed">
+                Jeoloji mühendisliğinden veri analitiğine geçiş sürecimdeki ilk adımlar ve hedeflerim.
+            </p>
+            <div class="mt-6">
+                <a href="https://ozanbaran.com.tr/veri-analisti-yolculugum-basliyor.html" class="text-sm font-bold text-white border-b border-[#4ade80] pb-1 hover:text-[#4ade80] transition-colors duration-300">Devamını Oku →</a>
+            </div>
+        </article>
+        <hr class="border-gray-900">
+    </div>
+</section>
+    </main>
+
+    <footer class="py-10 border-t border-gray-900 text-center">
+        <div class="flex justify-center gap-6 mb-4 text-white">
+            <a href="https://linkedin.com/in/ozanbrn" target="_blank" class="hover:neon-green transition">LinkedIn</a>
+            <a href="https://github.com/ozanbrn" target="_blank" class="hover:neon-green transition">GitHub</a>
+        </div>
+        <p class="text-gray-600 text-sm">© 2026 Ozan Baran. Tüm hakları saklıdır.</p>
+    </footer>
+
+<script>
+    // Sayfa tamamen yüklendiğinde çalışmaya başla
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+
+        // Eğer buton ve menü sayfada varsa işlemi yap (Hata almamak için güvenlik kontrolü)
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    });
+</script>
+</body>
+</html>
