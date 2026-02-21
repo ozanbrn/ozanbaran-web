@@ -1,6 +1,6 @@
 AUTHOR = 'Ozan Baran'
 SITENAME = 'Ozan Baran'
-SITEURL = ""
+SITEURL = 'https://ozanbaran.com.tr'
 
 PATH = "content"
 
@@ -31,12 +31,13 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-STATIC_PATHS = ['images', 'pdf', 'extra']
+STATIC_PATHS = ['images', 'pdf', 'extra/favicon.ico', 'extra/CNAME']
 
 THEME_STATIC_PATHS = ['static']
 
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 
 THEME = 'pelican-themes/my_themes'

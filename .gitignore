@@ -1,0 +1,14 @@
+# Python önbellekleri
+__pycache__/
+*.py[cod]
+
+# Sanal ortam
+venv/
+env/
+
+# Pelican çıktıları (Bunu GitHub Actions yapacak)
+output/
+cache/
+
+# Mac sistem dosyaları (Mac kullanıyorsan diye)
+.DS_Store
