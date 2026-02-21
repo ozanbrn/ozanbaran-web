@@ -1,6 +1,6 @@
 AUTHOR = 'Ozan Baran'
 SITENAME = 'Ozan Baran'
-SITEURL = 'https://ozanbaran.com.tr'
+SITEURL = ''
 
 PATH = "content"
 

@@ -182,27 +182,36 @@
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-4 text-white">
             Sertifikalar
         </h2>
-        
+
         <div class="relative flex overflow-hidden group">
             <div class="animate-infinite-scroll flex gap-6">
-                
-                {% for i in range(1, 9) %}
+        {% set sertifikalar = [
+    {'isim': 'BTK - Python Programlama Dili', 'gorsel': '/theme/btk-python.jpg'},
+    {'isim': 'HackerRank - SQL', 'gorsel': '/theme/hr-sqlbasic.jpg'},
+    {'isim': 'BTK - Uygulamalı Microsoft Power BI', 'gorsel': '/theme/btk-powerbi.jpg'},
+    {'isim': 'BTK - Excel Pivot Tablolarla Veri Analizi', 'gorsel': '/theme/btk-pivot.jpg'},
+    {'isim': 'BTK - Bilgi Teknolojilerine Giriş', 'gorsel': '/theme/btk-bilgi.jpg'},
+    {'isim': 'PatikaDev - Veri Bilimi', 'gorsel': '/theme/patika-datascience.jpg'},
+    {'isim': 'PatikaDev - Django Geliştirme', 'gorsel': '/theme/patika-djangobasic.jpg'},
+    {'isim': 'PatikaDev - Frontend Geliştirme', 'gorsel': '/theme/patika-frontend.jpg'}
+    ] %}
+            {% for sertifika in sertifikalar %}
                 <div class="min-w-[280px] w-[280px] flex-shrink-0">
                     <div class="h-48 bg-gray-900 rounded-xl overflow-hidden border border-gray-800 mb-4 hover:border-neon-green transition-all duration-300 relative">
-                        <img src="{{ SITEURL }}/theme/cert1.jpg" alt="Sertifika" 
-                             class="absolute inset-0 w-full h-full object-contain p-4 opacity-80 hover:opacity-100 transition duration-500">
+                        <img src="{{ SITEURL }}{{ sertifika.gorsel }}" alt="Sertifika" 
+                            class="absolute inset-0 w-full h-full object-contain p-4 opacity-80 hover:opacity-100 transition duration-500">
                     </div>
-                    <h3 class="text-[10px] font-bold text-white uppercase tracking-tighter">Sertifika Adı {{ i }}</h3>
+                    <h3 class="text-[10px] font-bold text-white uppercase tracking-tighter">{{ sertifika.isim }}</h3>
                 </div>
                 {% endfor %}
 
-                {% for i in range(1, 9) %}
+            {% for sertifika in sertifikalar %}
                 <div class="min-w-[280px] w-[280px] flex-shrink-0">
                     <div class="h-48 bg-gray-900 rounded-xl overflow-hidden border border-gray-800 mb-4 hover:border-neon-green transition-all duration-300 relative">
-                        <img src="{{ SITEURL }}/theme/cert1.jpg" alt="Sertifika" 
-                             class="absolute inset-0 w-full h-full object-contain p-4 opacity-80 hover:opacity-100 transition duration-500">
+                        <img src="{{ SITEURL }}{{ sertifika.gorsel }}" alt="Sertifika" 
+                            class="absolute inset-0 w-full h-full object-contain p-4 opacity-80 hover:opacity-100 transition duration-500">
                     </div>
-                    <h3 class="text-[10px] font-bold text-white uppercase tracking-tighter">Sertifika Adı {{ i }}</h3>
+                    <h3 class="text-[10px] font-bold text-white uppercase tracking-tighter">{{ sertifika.isim }}</h3>
                 </div>
                 {% endfor %}
 
