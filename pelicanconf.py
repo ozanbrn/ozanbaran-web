@@ -2,7 +2,9 @@ AUTHOR = 'Ozan Baran'
 SITENAME = 'Ozan Baran | Veri Analisti & Jeoloji Yüksek Mühendisi'
 SITESUBTITLE = 'Veri Bilimi ve Mühendislik Projeleri Portfolyosu'
 DESCRIPTION = 'Jeoloji Yüksek Mühendisi Ozan Baran\'ın veri analitiği, Python, SQL ve Power BI projelerini paylaştığı profesyonel portfolyo sitesidir.'
-SITEURL = ''
+SITEURL = 'https://ozanbaran.com.tr'
+
+PLUGIN_PATHS = ['venv/Lib/site-packages'] 
 
 PATH = "content"
 
@@ -56,5 +58,18 @@ STREAMLIT_PROJECTS = [
     }
 ]
 
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.5,
+        "indexes": 0.5,
+        "pages": 0.5
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly"
+    }
+}
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
