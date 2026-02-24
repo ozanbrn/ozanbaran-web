@@ -1,5 +1,7 @@
 AUTHOR = 'Ozan Baran'
-SITENAME = 'Ozan Baran'
+SITENAME = 'Ozan Baran | Veri Analisti & Jeoloji Yüksek Mühendisi'
+SITESUBTITLE = 'Veri Bilimi ve Mühendislik Projeleri Portfolyosu'
+DESCRIPTION = 'Jeoloji Yüksek Mühendisi Ozan Baran\'ın veri analitiği, Python, SQL ve Power BI projelerini paylaştığı profesyonel portfolyo sitesidir.'
 SITEURL = ''
 
 PATH = "content"
