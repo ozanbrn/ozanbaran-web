@@ -7,7 +7,7 @@ venv/
 env/
 
 # Pelican çıktıları (Bunu GitHub Actions yapacak)
-output/
+# output/
 cache/
 
 # Mac sistem dosyaları (Mac kullanıyorsan diye)
