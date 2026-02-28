@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ozan Baran | Veri Analisti &amp; Jeoloji Yüksek Mühendisi - Projeler</title><link href="https://ozanbaran.com.tr/" rel="alternate"/><link href="https://ozanbaran.com.tr/feeds/projeler.atom.xml" rel="self"/><id>https://ozanbaran.com.tr/</id><updated>2026-03-01T00:00:00+03:00</updated><subtitle>Veri Bilimi ve Mühendislik Projeleri Portfolyosu</subtitle><entry><title>Türkiye Maden Veri Analizi Projesi</title><link href="https://ozanbaran.com.tr/turkiye-maden-veri-analizi.html" rel="alternate"/><published>2026-03-01T00:00:00+03:00</published><updated>2026-03-01T00:00:00+03:00</updated><author><name>Ozan Baran</name></author><id>tag:ozanbaran.com.tr,2026-03-01:/turkiye-maden-veri-analizi.html</id><content type="html">&lt;iframe 
+    src="https://mineanlyst.streamlit.app/?embed=true" 
+    style="width: 100%; height: 600px; border: none; min-height: 500px;"&gt;
+&lt;/iframe&gt;</content><category term="Projeler"/></entry></feed>
