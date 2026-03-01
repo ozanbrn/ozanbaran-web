@@ -35,13 +35,14 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-STATIC_PATHS = ['images', 'pdf', 'extra/favicon.ico', 'extra/CNAME']
+STATIC_PATHS = ['images', 'pdf', 'extra/favicon.ico', 'extra/CNAME', 'robots.txt']
 
 THEME_STATIC_PATHS = ['static']
 
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'},
+    'robots.txt': {'path': 'robots.txt'},
 }
 
 THEME = 'pelican-themes/my_themes'
