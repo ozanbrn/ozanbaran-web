@@ -51,10 +51,10 @@ THEME = 'pelican-themes/my_themes'
 STREAMLIT_PROJECTS = [
     {
         'title': 'Türkiye Maden Veri Analizi',
-        'description': 'PostgreSQL ve Python kullanarak Türkiye boksit/bor verilerinin analizi.',
-        'github': 'https://github.com/ozanbrn',
-        'streamlit': 'https://ozanbaran.streamlit.app',
-        'tags': ['PostgreSQL', 'Python', 'Streamlit']
+        'description': 'Python, Pandas ve Plotly kullanılarak geliştirilen uçtan uca maden verileri analiz projesi. USGS ve MAPEG verileriyle küresel rezervler, fiyat trendleri ve Türkiye üretim hacimlerinin incelendiği interaktif gösterge paneli (Dashboard).',
+        'github': 'https://github.com/ozanbrn/Veri_Projeleri/tree/main/maden_analizi',
+        'streamlit': 'https://mineanlyst.streamlit.app/',
+        'tags': ['Python', 'Streamlit', 'Pandas', 'Plotly' ,'PostgreSQL']
     }
 ]
 
@@ -71,5 +71,7 @@ SITEMAP = {
         "pages": "monthly"
     }
 }
+
+DISPLAY_CATEGORIES_ON_MENU = True
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
