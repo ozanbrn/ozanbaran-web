@@ -1,4 +1,13 @@
 {% extends "base.html" %}
+```html
+{% block head %}
+  {{ super() }}
+  <meta name="description" content="{{ article.summary|striptags|truncate(150) }}">
+  <meta property="og:title" content="{{ article.title }} - Ozan Baran">
+  <meta property="og:description" content="{{ article.summary|striptags|truncate(150) }}">
+  <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}">
+{% endblock %}
+
 {% block content %}
 <article class="py-20 mx-auto {% if article.category|string == 'Projeler' %} w-full max-w-7xl px-4 {% else %} max-w-3xl px-6 {% endif %}">
     <header class="mb-12">
